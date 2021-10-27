@@ -1,4 +1,3 @@
-import { SsrProvider } from "../components/SsrProvider";
 import { Test1 } from "../components/Test1";
 import { Test2 } from "../components/Test2";
 
