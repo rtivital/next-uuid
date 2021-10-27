@@ -1,7 +1,10 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { SsrProvider } from "../components/SsrProvider";
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <SsrProvider>
+      <Component {...pageProps} />
+    </SsrProvider>
+  );
 }
-export default MyApp
